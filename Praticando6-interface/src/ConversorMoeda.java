@@ -1,8 +1,8 @@
 public class ConversorMoeda implements ConversaoFinanceira {
     @Override
-    public double converterDolarParaReal(double valorDolar) {
+    public void converterDolarParaReal(double valorDolar) {
         double cotacao = 5.50;
         double resultado = valorDolar*cotacao;
-        return resultado;
+        System.out.println("O valor em reais é: R$" + resultado);
     }
 }
